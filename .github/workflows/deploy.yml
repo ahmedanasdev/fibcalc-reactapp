@@ -20,14 +20,14 @@ jobs:
 
       - name: Build Docker images
         run: |
-          docker build -t ahmedgamil/multi-client ./client
-          docker build -t ahmedgamil/multi-server ./server
-          docker build -t ahmedgamil/multi-worker ./worker
-          docker build -t ahmedgamil/multi-nginx ./nginx
+          docker build -t ahmedanas04/multi-client ./client
+          docker build -t ahmedanas04/multi-server ./server
+          docker build -t ahmedanas04/multi-worker ./worker
+          docker build -t ahmedanas04/multi-nginx ./nginx
 
       - name: Push Docker images
         run: |
-          docker push ahmedgamil/multi-client
-          docker push ahmedgamil/multi-server
-          docker push ahmedgamil/multi-worker
-          docker push ahmedgamil/multi-nginx
+          docker push ahmedanas04/multi-client
+          docker push ahmedanas04/multi-server
+          docker push ahmedanas04/multi-worker
+          docker push ahmedanas04/multi-nginx
